@@ -15,7 +15,7 @@ Creating the 3 security groups -for Magento, Varnish, and the load balancer- and
 
 
 ## network.tf
-Uses the default VPC, creates 2 subnets for the load balancer, associates them with the route table, and assigns the internet gateway.
+Creates the custom VPC, creates 2 subnets for the load balancer, associates them with the route table, and assigns the internet gateway.
 
 ## load-balancer.tf
 It imports the certificate created with my account for the HTTPS listener. I created a hosted zone and a Route 53 record to validate my certificate. 
